@@ -41,7 +41,7 @@
   "5": {
     "inputs": {
       "seed": 1050264163883786,
-      "steps": 10,
+      "steps": 3,
       "cfg": 2,
       "sampler_name": "dpmpp_sde",
       "scheduler": "karras",
@@ -207,7 +207,7 @@
   },
   "76": {
     "inputs": {
-      "resolution": 666,
+      "resolution": 640,
       "image": ["43", 0]
     },
     "class_type": "OneFormer-ADE20K-SemSegPreprocessor",

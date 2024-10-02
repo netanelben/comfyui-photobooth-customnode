@@ -190,7 +190,7 @@ function App() {
           alt="logo"
           style={{
             width: "640px",
-            height: "480px",
+            height: "640px",
             objectFit: "contain",
           }}
         />
@@ -198,13 +198,22 @@ function App() {
         <div
           style={{
             display: "flex",
+            flexDirection: "column",
             gap: "1rem",
           }}
         >
+          <button
+            style={{
+              textAlign: "center",
+            }}
+            onClick={handleCapture}
+          >
+            📸 &nbsp; Capture
+          </button>
           <div
             style={{
               width: 640,
-              height: 480,
+              height: 640,
               backgroundColor: "darkgray",
             }}
           >
@@ -215,20 +224,11 @@ function App() {
             />
             <canvas
               width={640}
-              height={480}
+              height={640}
               ref={canvasRef}
               style={{ display: "none" }}
             />
           </div>
-          <button
-            style={{
-              textAlign: "center",
-              writingMode: "tb",
-            }}
-            onClick={handleCapture}
-          >
-            📸 &nbsp; Capture
-          </button>
         </div>
       )}
 
